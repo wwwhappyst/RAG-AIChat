@@ -62,13 +62,13 @@ BAAI/bge-reranker-base
 先安装依赖：
 
 ```powershell
-& 'D:\dev_tools\anaconda3\python.exe' -m pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 再下载模型：
 
 ```powershell
-& 'D:\dev_tools\anaconda3\python.exe' download_reranker_model.py
+python download_reranker_model.py
 ```
 
 下载目标目录：

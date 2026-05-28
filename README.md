@@ -179,7 +179,7 @@ flowchart LR
 
 当前项目里几项比较关键的配置如下：
 
-- Python 环境建议：`D:\dev_tools\anaconda3\python.exe`
+- Python 环境建议：使用当前已激活环境中的 `python`
 - Embedding 模型：`tongyi-embedding-vision-flash-2026-03-06`
 - LLM 模型：`qwen3.6-flash`
 - LLM Base URL：DashScope OpenAI 兼容接口
@@ -196,53 +196,54 @@ $env:DASHSCOPE_API_KEY="你的 Key"
 ## 8. 如何运行
 
 下面的命令建议在 `ai_tutor_rag/` 目录下执行。
+如果你使用虚拟环境，也可以把下面的 `python` 替换成相对路径形式，例如 `.\.venv\Scripts\python.exe`。
 
 ### 1. 安装依赖
 
 ```powershell
-& 'D:\dev_tools\anaconda3\python.exe' -m pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ### 2. 测试 DashScope Embedding 是否可用
 
 ```powershell
-& 'D:\dev_tools\anaconda3\python.exe' test_dashscope_api.py
+python test_dashscope_api.py
 ```
 
 ### 3. 重新构建标准知识库
 
 ```powershell
-& 'D:\dev_tools\anaconda3\python.exe' build_knowledge_base.py
+python build_knowledge_base.py
 ```
 
 ### 4. 构建 FAISS 向量索引
 
 ```powershell
-& 'D:\dev_tools\anaconda3\python.exe' build_vector_index.py
+python build_vector_index.py
 ```
 
 首次学习时，也可以先做小样本验证：
 
 ```powershell
-& 'D:\dev_tools\anaconda3\python.exe' build_vector_index.py --limit 30
+python build_vector_index.py --limit 30
 ```
 
 ### 5. 构建 BM25 索引
 
 ```powershell
-& 'D:\dev_tools\anaconda3\python.exe' build_bm25_index.py
+python build_bm25_index.py
 ```
 
 ### 6. 命令行提问
 
 ```powershell
-& 'D:\dev_tools\anaconda3\python.exe' ask.py "coze平台怎么注册并开始实践？" --show-debug
+python ask.py "coze平台怎么注册并开始实践？" --show-debug
 ```
 
 ### 7. 启动 Streamlit 页面
 
 ```powershell
-& 'D:\dev_tools\anaconda3\python.exe' -m streamlit run app.py
+python -m streamlit run app.py
 ```
 
 ## 9. 当前前端能看到什么

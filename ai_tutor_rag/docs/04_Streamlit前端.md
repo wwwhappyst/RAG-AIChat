@@ -169,7 +169,7 @@ Streamlit 的 `st.dataframe` 底层会把 pandas 表格转换成 Arrow 表。
 在 `ai_tutor_rag` 目录下运行：
 
 ```powershell
-& 'D:\dev_tools\anaconda3\python.exe' -m streamlit run app.py --server.address 127.0.0.1 --server.port 8501
+python -m streamlit run app.py --server.address 127.0.0.1 --server.port 8501
 ```
 
 然后在浏览器打开：

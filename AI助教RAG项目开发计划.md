@@ -391,8 +391,7 @@ def build_documents_from_excel_rows(rows):
 如果后续开启新的聊天窗口，可以把下面这段话发给 Codex：
 
 ```text
-我们正在开发一个 AI助教进阶RAG系统，工作区路径是：
-D:\BaiduSyncdisk\大模型应用开发学习\23期学习内容（2026-05-24）\AI助教相关数据
+我们正在开发一个 AI助教进阶RAG系统，工作区就是当前仓库根目录。
 
 请先阅读项目根目录下的《AI助教RAG项目开发计划.md》。
 
