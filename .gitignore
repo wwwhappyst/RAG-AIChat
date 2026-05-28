@@ -13,8 +13,6 @@ venv/
 # Logs
 *.log
 
-# Local screenshots / temp artifacts
-*.png
 
 # Build artifacts
 dist/
