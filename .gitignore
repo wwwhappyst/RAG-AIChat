@@ -40,6 +40,12 @@ coze知识库/
 *.xls
 *.csv
 
+# Upload-friendly sample data
+!ai_tutor_rag/data/
+!ai_tutor_rag/data/processed/
+ai_tutor_rag/data/processed/*
+!ai_tutor_rag/data/processed/knowledge_base_sample_20.jsonl
+
 # Local model weights
 *.bin
 *.safetensors
