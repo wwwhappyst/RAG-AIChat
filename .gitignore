@@ -1,0 +1,46 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual env
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Local screenshots / temp artifacts
+*.png
+
+# Build artifacts
+dist/
+build/
+
+# Project runtime outputs
+ai_tutor_rag/data/processed/
+ai_tutor_rag/indexes/
+ai_tutor_rag/models/
+ai_tutor_rag/.streamlit/
+ai_tutor_rag/.modelscope_cache/
+ai_tutor_rag/streamlit_*.log
+ai_tutor_rag/streamlit_*.png
+
+# Raw knowledge data kept local only
+课程视频知识库/
+微信群问答知识库/
+coze知识库/
+
+# Local data files
+*.jsonl
+*.xlsx
+*.xls
+*.csv
+
+# Local model weights
+*.bin
+*.safetensors
+*.onnx

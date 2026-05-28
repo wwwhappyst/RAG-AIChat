@@ -1,0 +1,11 @@
+pandas
+openpyxl
+dashscope
+openai
+faiss-cpu
+jieba
+rank-bm25
+streamlit
+torch
+transformers
+modelscope
